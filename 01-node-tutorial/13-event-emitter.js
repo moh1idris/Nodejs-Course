@@ -24,17 +24,17 @@
 
 // // Here i'm passing the arguments just like names n id for the user and only to the 1-->on 
 const EventEmitter = require('events'); 
-const customEMitter = new EventEmitter()     //-->creted an object 
+const customEMitter = new EventEmitter()                //-->creted an object 
 
 // on and emit methods
 // keep track of the order
 // additional arguments
 // built-in modules utilize it
-
-customEMitter.on('response',(name,id) => {          //--> response is the name of the event 
+ 
+customEMitter.on('response',(name,id) => {             //--> response is the name of the event 
  console.log(`data recieved user ${name} with id:${id}`);
 })           
-customEMitter.on('response',() => {          //--> response is the name of the event 
+customEMitter.on('response',() => {                   //--> response is the name of the event 
     console.log(`some other logic  here `);
    })  
 customEMitter.emit('response','john', 34)         
