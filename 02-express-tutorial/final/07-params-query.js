@@ -11,7 +11,7 @@ app.get('/api/products', (req, res )=>{
      const {id,name,image} = product;                       //--> destrucimng the value for the map
      return {id,name,image}                                 //-->will only return this values 
     })
-    res.json(newProducts)                                 //--> this will give the only id,name,image 
+    res.json(newProducts)                                  //--> this will give the only id,name,image 
 })
 
 
@@ -59,14 +59,14 @@ app.get('/api/products/:productId/reviews/:reviewID',
 app.get('/api/v1/query', (req, res) => {
     // console.log(req.query)
     const { search, limit } = req.query
-    let sortedProducts = [...products]      //--> spread operator
+    let sortedProducts = [...products]                         //--> spread operator
   
-    if (search) {                               //-->http://localhost:5000/api/v1/query?search=a --> this willl give two json.product 
+    if (search) {                                              //-->http://localhost:5000/api/v1/query?search=a --> this willl give two json.product 
       sortedProducts = sortedProducts.filter((product) => {               
         return product.name.startsWith(search)
       })
     }
-    if (limit) {                                   //-->http://localhost:5000/api/v1/query?limit=2 --> this will give two jsonproducts
+    if (limit) {                                              //-->http://localhost:5000/api/v1/query?limit=2 --> this will give two jsonproducts
       sortedProducts = sortedProducts.slice(0, Number(limit))
     }
     // //--> if the starts letter is not there then we can set a message  as this below

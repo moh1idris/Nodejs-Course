@@ -4,7 +4,7 @@
 // ////--> reading a file here which is created in  as index.html
 // const { readFileSync } = require('fs')
 // //get all files 
-// const homepage = readFileSync('../index.html')
+// const homepage = readFileSync('./index.html')
 // const server = http.createServer((req, res) =>{                                  
 //     const url = req.url;
 //     // home page

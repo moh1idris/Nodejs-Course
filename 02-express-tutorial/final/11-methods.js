@@ -6,12 +6,12 @@ let { people } = require('./data')
 // static assets
 app.use(express.static('./methods-public'))
 // parse form data
-app.use(express.urlencoded({ extended: false }))    //-->in order to get the data what we are seding in the form then use this 
+app.use(express.urlencoded({ extended: false }))                 //-->in order to get the data what we are seding in the form then use this 
 // parse json
 app.use(express.json())
 
 app.get('/api/people', (req, res) => {
-  res.status(200).json({ success: true, data: people })         //--> this will get the json data from the data,js file 
+  res.status(200).json({ success: true, data: people })          //--> this will get the json data from the data.js file 
 })
 
 app.post('/api/people', (req, res) => {
@@ -24,7 +24,7 @@ app.post('/api/people', (req, res) => {
   res.status(201).json({ success: true, person: name })
 })
 
-app.post('/api/postman/people', (req, res) => {
+app.post('/api/people/postman', (req, res) => {
   const { name } = req.body
   if (!name) {
     return res
@@ -35,7 +35,7 @@ app.post('/api/postman/people', (req, res) => {
 })
 
 app.post('/login', (req, res) => {
-  const { name } = req.body            //--> here name is taken from the html file from .mehtodpublic
+  const { name } = req.body                                      //--> here name is taken from the html file from .mehtodpublic
   if (name) {
     return res.status(200).send(`Welcome ${name}`)
   }

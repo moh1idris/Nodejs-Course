@@ -39,19 +39,21 @@
 
 // //  req => middleware => res
 //  ///--> here dynamically adding the logger to all the routes
-//  app.use(logger)                //--> app.use --> should always be in the top
+//  app.use(logger)                               //--> app.use --> should always be in the top
+
 //  //  app.use('/api',logger)                    //--> you can also setup with th epath even --> it will be aplied only after the /api -->products n items 
 //  // api/home/about/products
-//     app.get('/', logger,(req, res) => {
+
+//     app.get('/', (req, res) => {
 //     res.send('Home')
 //     })
-//     app.get('/about', logger ,(req, res) => {
+//     app.get('/about',(req, res) => {
 //     res.send('About')
 //     })
-//     app.get('/api/products', logger, (req, res) => {
+//     app.get('/api/products',  (req, res) => {
 //     res.send('Products')
 //     })
-//     app.get('/api/items', logger, (req, res) => {
+//     app.get('/api/items',  (req, res) => {
 //     console.log(req.user)
 //     res.send('Items')
 //     })
@@ -106,6 +108,8 @@
 //  //  req => middleware => res
 // // 1. use vs route
 // // 2. options -our own / express / third party  
+
+
 //  //   app.use([logger , authorize])            
  
 //      app.get('/',(req, res) => {                                 //-->http://localhost:5000

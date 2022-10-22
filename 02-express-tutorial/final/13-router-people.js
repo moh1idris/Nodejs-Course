@@ -9,7 +9,7 @@ const {
   deletePerson,
 } = require('./controllers/people')
 
-// router.get('/', getPeople)
+// router.get('/', getPeople)                                                //--> this will be help full if you use the people-controller
 // router.post('/', createPerson)
 // router.post('/postman', createPersonPostman)
 // router.put('/:id', updatePerson)

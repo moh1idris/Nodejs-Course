@@ -20,14 +20,15 @@
 // })
 // server.listen(5000)                               
 
+   
 
 // //--> Dealing with the request object
 // const http = require('http')        
 // const server = http.createServer((req, res) =>{    
-//     // console.log(req);                                   //--> if u add this and run the l5000 then u will get a gaint object 
-//     // console.log(req.method);                             //--> this will give you the methiod which you are using 
-//     console.log(req.url)                                   //--> this will show u the url which u r using in l500
-//     res.writeHead(200, {'content-type':'text/html'})                    //--> if u write type = plain then it willl  shoe the tags as text 
+//     // console.log(req);                                     //--> if u add this and run the l5000 then u will get a gaint object 
+//     // console.log(req.method);                              //--> this will give you the methiod which you are using 
+//     console.log(req.url)                                     //--> this will show u the url which u r using in l500
+//     res.writeHead(200, {'content-type':'text/html'})         //--> if u write type = plain then it willl  shoe the tags as text 
 //     res.write('<h1>Home page</h1>')                           
 //     res.end()
 // })

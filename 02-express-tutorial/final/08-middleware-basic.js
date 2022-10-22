@@ -20,7 +20,7 @@ const app = express()
 //     const method = req.method;
 //     const url = req.url;
 //     const time = new Date().getFullYear();
-//     console.log(method,url,time);         ///-> this will give you the --> GET / 2022
+//     console.log(method,url,time);                              ///-> this will give you the --> GET / 2022
 //     res.send('Home')
 // })
 // app.get('/about',(req,res)=>{
@@ -37,8 +37,8 @@ const logger = (req,res,next )=>{
     const method = req.method;
     const url = req.url;
     const time = new Date().getFullYear();
-    console.log(method,url,time);         ///-> this will give you the --> GET / 2022
-    // res.send('Testing')             //--> this will stop the spining and execute tesing
+    console.log(method,url,time);                                                       //-> this will give you the --> GET / 2022
+    // res.send('Testing')                                                              //--> this will stop the spining and execute tesing
     next()         
  }                
 app.get('/', logger ,(req,res)=>{
