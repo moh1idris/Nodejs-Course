@@ -22,7 +22,32 @@
 
 
 
-//--> Here --> we are usinhg the task.js where there it get method -- and we have set the router over there
+// //--> Here --> we are usinhg the task.js where there it get method -- and we have set the router over there
+// const express = require('express');
+// const app = express();
+// const tasks = require('./routes/tasks')                  
+
+
+// // middleware
+// app.use(express.json())                 //--> if we dont use this then  we will not get the req.body
+
+// //--> setting the routes 
+// app.get('/hello', (req,res)=>{
+//     res.send('Task Manager App')             
+// })
+
+// //--> setting up the route rote -->
+// app.use('/api/v1/tasks',tasks)               //-->http://localhost:3000/api/v1/tasks
+
+// const port = 3000       
+// app.listen(3000, console.log(`Server is listening on port ${port}... `))
+
+
+
+
+
+// //--> here we are connecting it to the dataBase
+require('./db/connect')
 const express = require('express');
 const app = express();
 const tasks = require('./routes/tasks')                  
