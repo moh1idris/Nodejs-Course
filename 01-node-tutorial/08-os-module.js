@@ -1,5 +1,5 @@
 // BUILT-In  OS-Module               //---> try to do all the built in modulees 
-const os = require('os')         //--> os --> is nothing but the opratingsystem 
+const os = require('os')             //--> os --> is nothing but the opratingsystem 
 
 // info about current user
 const user = os.userInfo()

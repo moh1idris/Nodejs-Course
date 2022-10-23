@@ -12,8 +12,8 @@ console.log('stream example');
 
 
 
-  // --> this will give you all the text which is ther en the BIG.txt-->
- // you can run and c it in the local host 5000
+// --> this will give you all the text which is ther en the BIG.txt-->
+// you can run and c it in the local host 5000
 
 
 

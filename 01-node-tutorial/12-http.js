@@ -5,7 +5,7 @@ const http = require('http');
 //     res.write('Welcome to our home page');
 //     res.end()
 // })
-// server.listen(5000)               //--> setting the server to run on the local host 5000
+// server.listen(5000)                                  //--> setting the server to run on the local host 5000
 
 
 
