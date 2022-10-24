@@ -29,6 +29,7 @@ app.get('/api/products/:productID', (req, res )=>{
     // console.log(req);
     // console.log(req.params);
     const { productID } = req.params;
+
     const singleProduct = products.find((product)=> 
     product.id === Number(productID))
     //--> if anyone write string instead of number then use this 
@@ -52,7 +53,7 @@ app.get('/api/products/:productId/reviews/:reviewID',
 // app.get('/api/v1/query', (req,res)=>{
 //     console.log(req.params);
 //     res.send('Hello world') //--> http://localhost:5000/api/v1/query?name=john then it will get -->hello world 
-// })
+// }) 
 
 
 // //-->here we will use to search 

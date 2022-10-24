@@ -1,6 +1,6 @@
 // const router = require("../routes/tasks")
 
-// const getAllTasks = (req,res)=>{          //--> hardCoding the get method __
+// const getAllTasks = (req,res)=>{          //--> hardCoding the get method __ 
 //      res.send('get all the task')
 //     }
 

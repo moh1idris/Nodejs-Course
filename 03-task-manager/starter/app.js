@@ -228,7 +228,7 @@
 
 
 
-// //-->Here im seeting th eport variable 
+// // Here im seeting th eport variable 
 
 const express = require('express');
 const app = express();
@@ -244,7 +244,7 @@ app.use(express.json())                 //--> if we dont use this then  we will 
 
 
 //--> setting up the route rote -->
-app.use('/api/v1/tasks', tasks)               //-->http://localhost:3000/api/v1/tasks
+app.use('/api/v1/tasks', tasks)              //-->http://localhost:3000/api/v1/tasks
 app.use(notFound)                             //--> this is to set the route as anyone changes the route as speel in correct link then 
 app.use(errorHandlerMiddleware)
 
@@ -252,11 +252,12 @@ const port = process.env.PORT || 3000     //--> here im setting up the port in .
 //--> since if the 
 const start = async ()=>{
     try {
-        await connectDB(process.env.MONGO_URI)      //--> wated to keep my screat varibale very very secrect  so setetd up the .env file          
+        await connectDB(process.env.MONGO_URI)      // wated to keep my screat varibale very very secrect  so setetd up the .env file          
         app.listen(port,console.log(`Server is listening on port ${port}... `))
     } catch (error) {
         console.log(error);
     }
 };
 start();
+// vbhjk
 
