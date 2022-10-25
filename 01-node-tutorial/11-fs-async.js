@@ -26,8 +26,6 @@ readFile('./content/first.txt', 'utf8', (err,result)=>{            //--> if you 
             }
             console.log(result);
             console.log('done with the task');
-            
-            
          })
     })
 })

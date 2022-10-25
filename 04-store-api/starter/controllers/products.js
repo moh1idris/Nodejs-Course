@@ -45,10 +45,7 @@
 //     res.status(200).json({products , nbHits: products.length})
 // }
 
-// module.exports ={
-//                   getAllProducts,
-//                   getAllProductsStatic 
-//                   }
+// module.exports ={getAllProducts,getAllProductsStatic}
 
 
 
@@ -63,8 +60,8 @@
 //     res.status(200).json({ products , nbHits: products.length })
 // }
 // const getAllProducts = async(req,res)=>{        //--> just looking to the feature
-//     const { featured } = req.query    //--> pulling out the property only i wanna define 
-//     const queryObject = {}                   //-----> if featuerd is mentioned in post then it will give that r else it will return n empty object to the terminnal
+//     const { featured } = req.query             //--> pulling out the property only i wanna define 
+//     const queryObject = {}                     //-----> if featuerd is mentioned in post then it will give that r else it will return n empty object to the terminnal
 //     if(featured){            //-->if true then set -->
 //         queryObject.featured = featured === 'true'? true : false  //--> if true then this 
 //     }
@@ -72,11 +69,7 @@
 //     const products = await Product.find(queryObject);
 //     res.status(200).json({products , nbHits: products.length})
 // }
-
-// module.exports ={
-//                   getAllProducts,
-//                   getAllProductsStatic 
-//                   }
+// module.exports ={getAllProducts,getAllProductsStatic}
 
 
 
@@ -90,7 +83,7 @@
 // }
 // const getAllProducts = async(req,res)=>{        //--> just looking to the feature
 //     const { featured , company } = req.query    //--> pulling out the property only i wanna define 
-//     const queryObject = {}                   //-----> if featuerd is mentioned in post then it will give that r else it will return n empty object to the terminnal
+//     const queryObject = {}                      //-----> if featuerd is mentioned in post then it will give that r else it will return n empty object to the terminnal
 //     if(featured){            //-->if true then set -->
 //         queryObject.featured = featured === 'true'? true : false  //--> if true then this 
 //     }
@@ -102,10 +95,7 @@
 //     res.status(200).json({products , nbHits: products.length})
 // }
 
-// module.exports ={
-//                   getAllProducts,
-//                   getAllProductsStatic 
-//                   }
+// module.exports ={getAllProducts,getAllProductsStatic}
 
 
 //--> setting up the name 
@@ -135,10 +125,7 @@
 //     res.status(200).json({products , nbHits: products.length})
 // }
 
-// module.exports ={
-//                   getAllProducts,
-//                   getAllProductsStatic 
-//                   }
+// module.exports ={getAllProducts,getAllProductsStatic}
 
 
 //-->seeting up the limit
@@ -174,10 +161,7 @@
 //     res.status(200).json({products , nbHits: products.length})
 // }
 
-// module.exports ={
-//                   getAllProducts,
-//                   getAllProductsStatic 
-//                   }
+// module.exports ={getAllProducts,getAllProductsStatic}
 
 
 //--> if i just want name r rating to display then --> limit
@@ -231,10 +215,7 @@
 //     res.status(200).json({products , nbHits: products.length})
 // }
 
-// module.exports ={
-//                   getAllProducts,
-//                   getAllProductsStatic 
-//                   }
+// module.exports ={getAllProducts,getAllProductsStatic}
 
 
 
@@ -278,7 +259,7 @@ const getAllProducts = async(req,res)=>{
         // console.log(filters);     //--> if u done write the below cod e then u will get -->price-$gt-40,rating-$gte-4
         const  options = ['price' , 'rating']                     //--> this are using number vallue
         filters = filters.split(',').forEach((item)=>{            //--> spliting string into an array
-            const [feild,operator,value] = item.split('-')        //--> spliting iinto array 
+            const [feild,operator,value] = item.split('-')        //--> spliting into array 
             if(options.includes(feild)){                          //--> in it has price and rating then only the feilds work
                 queryObject[feild] = {[operator]:Number(value)}   //-->{ price: { '$gt': 40 }, rating: { '$gte': 4 } } --> will show like this 
             }

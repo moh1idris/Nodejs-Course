@@ -23,10 +23,10 @@ const { getAllTasks ,
 router.route('/').get(getAllTasks).post(createTask)       //--> this has only api/v1
 router
 .route('/:id')
-.get(getTask)
-.patch(updateTask)
-.delete(deleteTask)
-//.put(editTask)     //--> this has api/v1/:id
+             .get(getTask)
+             .patch(updateTask)
+             .delete(deleteTask)
+             //.put(editTask)     //--> this has api/v1/:id
 
 
 module.exports = router

@@ -30,4 +30,4 @@ stream.on('data', (result) => {                         //--> event
 })
 
 // -->using error to <.> in the stream above 
-stream.on('error', (err) => console.log(err))          //--> gave WRONG PATH IN ABove
+stream.on('error', (err) => console.log(err))          //--> gave WRONG PATH IN Above
